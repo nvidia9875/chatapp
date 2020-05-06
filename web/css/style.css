@@ -41,7 +41,6 @@ input[type="text"]:focus {
 .userimage{
   width:40%;
   max-width: 100%;
-  height: auto;
 }
 .usersecleft{
   flex-basis: 45%;
@@ -85,14 +84,29 @@ input[type="text"]:focus {
 .chattopsec{
   background-color: #303030;
   flex-basis: 10%; 
+  display: flex;
+  align-items: center;
+  color: #eee;
 }
 .chatsec{
   flex-basis: 80%;
   padding: 10px;
+  overflow: scroll;
+}
+
+/* chat top section */
+.targetimage{
+  width:3rem;
+  max-width: 100%;
+  height: auto;
+  margin-left: 1rem;
+}
+.targetname{
+  margin-left: 1.2rem;
 }
 
 /* message */
-.says {
+.targetcomment {
   display: inline-block;
   position: relative; 
   margin: 10px 0 0 30px;
@@ -101,7 +115,7 @@ input[type="text"]:focus {
   border-radius: 15px;
   background: #e7e5e5;
 }
-.says:after {
+.targetcomment:after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -112,7 +126,7 @@ input[type="text"]:focus {
   -webkit-transform: rotate(35deg);
   transform: rotate(35deg);
 }
-.says p {
+.targetcomment p {
   margin: 0;
   padding: 0;
 }
